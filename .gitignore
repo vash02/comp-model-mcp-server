@@ -1,0 +1,12 @@
+# Byte-compiled / output files
+__pycache__/
+*.py[cod]
+*.sqlite3
+# Virtual env
+venv/
+.env
+# Editor directories
+.vscode/
+.idea/
+# Generated models directory if you don't want to track generated code
+generated_models/
