@@ -1,4 +1,4 @@
-# MCP Server
+# Physics Model MCP Server
 
 A modular platform for defining, generating, executing, and tracking physics model experiments with reproducibility.
 
