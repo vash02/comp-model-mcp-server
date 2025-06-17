@@ -57,14 +57,25 @@ curl -X POST http://localhost:8000/models/{model_id}/approve
 
 ### 3. Run a Single Experiment
 ```bash
-curl -X POST http://localhost:8000/models/{model_id}/run \
-  -H "Content-Type: application/json" \
+curl -X 'POST' \
+  'http://127.0.0.1:8000/models/lorenz_1ac9a383/run' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
   -d '{
-    "parameters":[{"name":"sigma","value":10.0},{"name":"rho","value":28.0},{"name":"beta","value":2.6667}],
-    "initial_conditions":[{"name":"x0","value":1.0},{"name":"y0","value":1.0},{"name":"z0","value":1.0}]
-}'
+  "parameters": [
+    { "name": "sigma", "value": 10.0 },
+    { "name": "rho",   "value": 28.0 },
+    { "name": "beta",  "value": 2.6666666666666665 }
+  ],
+  "initial_conditions": [
+    { "name": "x0", "value": 1.0 },
+    { "name": "y0", "value": 1.0 },
+    { "name": "z0", "value": 1.0 }
+  ]
+}
+'
 ```
-> Response includes experiment `results`, `duration`, and `exit_code`.
+> Response includes experiment `results`.
 
 ### 4. Retrieve Experiment Results
 ```bash
