@@ -8,7 +8,6 @@ A modular platform for defining, generating, executing, and tracking physics mod
    ```bash
    git clone https://github.com/your-org/comp-model-mcp-server.git
    cd comp-model-mcp-server
-   pip install -r requirements.txt
    ```
 
 2. **Set environment variables**
