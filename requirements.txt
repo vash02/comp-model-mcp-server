@@ -1,0 +1,8 @@
+fastapi
+pydantic
+openai
+sentence-transformers
+torch
+numpy
+scipy
+sympy 
