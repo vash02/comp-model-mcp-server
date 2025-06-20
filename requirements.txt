@@ -5,4 +5,5 @@ sentence-transformers
 torch
 numpy
 scipy
-sympy 
+sympy
+tf-keras
